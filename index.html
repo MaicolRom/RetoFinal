@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase CRUD Reto Final</title>
+
+    <!-- BOOTSWATCH -->
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/yeti/bootstrap.min.css"
+    />
+  </head>
+
+<!-- ESTUDIANTE-->
+
+  <body class="bg-dark">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="h4">Estudiante</h1>
+
+              <form id="students-form">
+                <label for="student-name">Nombre: </label>
+                <input
+                  type="text"
+                  id="student-name"
+                  class="form-control mb-3"
+                  placeholder="Ingresar los nombres"
+                  autofocus
+                />
+
+                <label for="student-last-name">Apellido:</label>
+                <input
+                  id="student-last-name"
+                  rows="3"
+                  class="form-control mb-3"
+                  placeholder="Ingresar los apellidos"
+                />
+
+                <button class="btn btn-primary" id="btn-task-form">Save</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6" id="students-container"></div>
+        </div>
+
+<!--MATRICULAR-->
+
+        <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h1 class="h4">Matricular</h1>
+  
+                <form id="enrollment-form">
+                  <label for="student-id">ID Estudiante: </label>
+                  <input
+                    type="text"
+                    id="student-id"
+                    class="form-control mb-3"
+                    placeholder="Id del estudiante"
+                    autofocus
+                  />
+  
+                  <label for="class-id">Id clase:</label>
+                  <input
+                    type="text"
+                    id="class-id"
+                    class="form-control mb-3"
+                    placeholder="Id de la clase"
+                  />
+                  <button class="btn btn-primary" id="btn-task-form">Save</button>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-6" id="enrollment-container"></div>
+          </div>
+
+<!--CLASE-->
+
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h1 class="h4">Clase</h1>
+  
+                <form id="Class-form">
+                  <label for="class-title">Titulo: </label>
+                  <input
+                    type="text"
+                    id="class-title"
+                    class="form-control mb-3"
+                    placeholder="Titulo de la clase"
+                    autofocus
+                  />
+  
+                  <label for="class-description">Descripcion:</label>
+                  <input
+                    type="text"
+                    id="class-description"
+                    class="form-control mb-3"
+                    placeholder="Descripcion de la clase"
+                  />
+                  <button class="btn btn-primary" id="btn-task-form">Save</button>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-6" id="class-container"></div>
+          </div>
+
+    <!-- CUSTOM CODE -->
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
